@@ -1,0 +1,412 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+}
+
+.main {
+    margin: 0 auto;
+    display: flex;
+    max-width: 100%;
+    height: 100%;
+    min-height: 100vh;
+    align-items: stretch;
+}
+
+.logo_text {
+    margin: 10px;
+}
+
+nav {
+    position: relative;
+    width: 23%;
+    background-color: rgb(51, 51, 51);
+    text-align: center;
+    color: #fff;
+}
+
+.menu {
+    margin: 20px;
+}
+
+span {
+    position: fixed;
+    display: none;
+    font-size: 35px;
+    color: #fff;
+    border-radius: 1.3em;
+    text-align: center;
+    z-index: 51;
+}
+
+.open {
+    top: 21px;
+    left: 21px;
+    background-color: rgba(167, 167, 167, 0.555);
+    z-index: 998;
+}
+
+.close {
+    top: 21px;
+    right: 21px;
+    z-index: 1000;
+}
+
+hr {
+    width: 60%;
+    margin: 0 auto;
+}
+
+.menu_element a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.menu_element a:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+
+/*Блоки с картинками*/
+
+section {
+    background-color: #bdbdbd;
+    flex-basis: 100%;
+    height: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    align-content: flex-start;
+}
+
+section h1 {
+    margin: 0 auto;
+    margin-top: 130px;
+}
+
+.naz:before {
+    content: "Название:";
+}
+
+.article {
+    transition: 0.3s ease;
+    width: calc(25% - 30px);
+    background-color: #fff;
+    margin: 15px;
+    border-radius: 15px;
+    line-height: 1;
+}
+
+.content img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.content img:hover {
+    background-color: rgba(0, 0, 0, 0.479);
+}
+
+.content {
+    padding: 10px;
+}
+
+.scr:before {
+    content: "Описание:";
+}
+
+.sidenav {
+    display: none;
+}
+
+.none {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    color: #111;
+    margin: 15px;
+    background-color: rgba(255, 255, 255, 0.4);
+    border-radius: 0.4em;
+}
+
+.foot {
+    display: block;
+    position: fixed;
+}
+
+.inst {
+    bottom: 25px;
+    right: 25px;
+}
+
+.vk {
+    bottom: 90px;
+    right: 25px;
+}
+
+.img_soc {
+    transition: 0.6s;
+    margin: 0 auto;
+    width: 50px;
+    border-radius: 0.8em;
+}
+
+.img_soc:hover {
+    transform: scale(1.3);
+}
+
+
+/*****************/
+
+.fixid {
+    position: fixed;
+    z-index: 1;
+    display: none;
+    width: 40%;
+    margin: auto;
+    border-radius: 15px;
+    left: 50%;
+    top: 15px;
+    margin-left: -20%;
+    cursor: pointer;
+}
+
+.fixid img {
+    margin: 0 auto;
+    width: 100%;
+    border-radius: 15px;
+    object-fit: cover;
+}
+
+
+/**************************
+Блоки с картинками fixid
+*************************/
+
+.bottom_soc {
+    display: none;
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    text-align: center;
+}
+
+.img_soc_vk {
+    display: inline;
+    width: 50%;
+    background-color: #4c77a2;
+}
+
+.img_soc_vk img {
+    max-width: 100%;
+    height: 60px;
+}
+
+.img_soc_vk a {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+}
+
+.img_soc_inst {
+    width: 50%;
+    background: #f09433;
+    background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    background: -webkit-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888', GradientType=1);
+    font-family: 'Caveat', cursive;
+    font-size: 4em;
+}
+
+.ilezia_img {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+}
+
+.ilezia_img a {
+    color: #fff;
+}
+
+.img_soc_inst img {
+    height: 60px;
+    max-width: 100%;
+}
+
+.help_img {
+    display: none;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.527);
+    transition: 0.3s;
+}
+
+.help_text {
+    font-size: 17px;
+    padding: 5px;
+    color: #fff;
+    border: dashed #fff 2px;
+}
+
+
+/******************
+media
+**************/
+
+@media screen and (max-width: 1280px) {
+    .kolectsia {
+        font-size: 1.7em;
+    }
+    .article {
+        width: calc(33% - 28px);
+    }
+    .fixid {
+        width: 60%;
+        margin-left: -30%;
+    }
+}
+
+@media screen and (max-width: 1080px) {
+    .main {
+        display: block;
+    }
+    .sidenav {
+        display: block;
+    }
+    .article {
+        width: calc(50% - 30px);
+    }
+    .content img {
+        width: 100%;
+        height: 570px;
+        object-fit: cover;
+        border-radius: 15px;
+    }
+    nav {
+        display: none;
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        font-size: 50px;
+        z-index: 999;
+    }
+    #logo {
+        display: none;
+    }
+    .menu {
+        margin-top: 30vh;
+    }
+    span {
+        display: block;
+    }
+    .close {
+        display: none;
+    }
+    .naz {
+        font-size: 40px;
+    }
+    .fixid {
+        width: 80%;
+        margin-left: -40%;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .article {
+        width: 100%;
+    }
+    .img_soc {
+        width: 50px;
+    }
+    .inst {
+        bottom: 25px;
+        right: 25px;
+    }
+    .vk {
+        bottom: 150px;
+        right: 25px;
+    }
+    .fixid {
+        width: 90%;
+        margin-left: -45%;
+    }
+    .foot {
+        display: none;
+    }
+    .bottom_soc {
+        display: flex;
+    }
+    .img_soc_inst {
+        font-size: 3em;
+    }
+}
+
+@media screen and (min-width: 750px) {
+    /* увеличенная картинка */
+    #magnify {
+        display: none;
+        position: fixed;
+        max-width: 900px;
+        height: auto;
+        z-index: 9999;
+    }
+    #magnify img {
+        width: auto;
+        height: 90vh;
+    }
+    /* затемняющий фон */
+    #overlay {
+        display: none;
+        background: #000;
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        opacity: 0.8;
+        z-index: 9990;
+    }
+    /* кнопка закрытия */
+    #close-popup {
+        width: 30px;
+        height: 30px;
+        background: #FFFFFF;
+        border: 1px solid #AFAFAF;
+        border-radius: 15px;
+        cursor: pointer;
+        position: absolute;
+        top: 15px;
+        right: 15px;
+    }
+    #close-popup i {
+        width: 30px;
+        height: 30px;
+        background: url(https://codernote.ru/files/cross.png) no-repeat center center;
+        background-size: 16px 16px;
+        display: block;
+    }
+    @keyframes rota {
+        25% {
+            transform: rotate(360deg);
+        }
+    }
+    #close-popup:hover {
+        animation: rota 4s infinite normal;
+        -webkit-animation-iteration-count: 1;
+        animation-iteration-count: 1;
+    }
+    /*******************
+    **********/
+    .article:hover {
+        transform: scale(1.05);
+        cursor: pointer;
+        box-shadow: 9px 7px 4px #9f9f9f;
+    }
+}
