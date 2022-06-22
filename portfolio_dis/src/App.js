@@ -1,11 +1,11 @@
 import './App.css'
-import Menu from './components/Menu/Menu'
+import { Menu } from './component/Menu/Menu'
 
 function App() {
   return (
-    <div className='App'>
+    <main className='page'>
       <Menu />
-    </div>
+    </main>
   )
 }
 

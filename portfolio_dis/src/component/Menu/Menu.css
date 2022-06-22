@@ -1,0 +1,18 @@
+.menu {
+  list-style-type: none;
+  font-weight: 600;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 32px 0;
+  border-bottom: solid var(--text_menu) 1px;
+}
+
+.menu__element a {
+  color: var(--text_menu);
+  text-decoration: none;
+}
+
+a.active {
+  color: var(--text);
+}

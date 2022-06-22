@@ -1,4 +1,16 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 .container {
   max-width: 1140px;
   margin: 0 auto;
+}
+
+:root {
+  --text_menu: #828282;
+  --text: #000;
+  --bg_color: #fff;
 }
